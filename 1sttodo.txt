@@ -113,6 +113,10 @@ sudo R
 # Get on the Rstudio official site, download the installation deb, and click on the "Install" of the deb GUI
 
 
+# vim
+sudo apt-get install vim vim-gnome
+
+
 # git
 sudo apt-get build-dep git-all
 sudo apt-get install git-all
