@@ -1,0 +1,129 @@
+# This is a list of what you should do first right after ubuntu installation.
+# ubuntu 15.10 Date 2016-1-1
+# Make sure that your internet connection is very good.
+
+
+# Get on any video website, like youku, click on any video window, the information would lead you to download the flash player deb, then just click on the "Install" of the deb GUI.
+
+
+# Update all the installed apps.
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get clean
+
+
+# for the Chinese Input System, always keep this in mind:
+# NO IBUS! Always Fcitx! Ibus works like shit.
+# which should be already installed.
+# Install sougou in ubuntu software center.
+# And try the following to give you more options:
+
+sudo apt-get install fcitx
+sudo apt-get install fcitx-googlepinyin fcitx-libpinyin fcitx-sunpinyin
+
+
+# Java
+# The versions may be updated, always check for the latest releases
+
+sudo apt-get install openjdk-8-jdk # the open java
+sudo add-apt-repository ppa:webupd8team/java # adding source for oracle java
+sudo apt-get update
+sudo apt-get install oracle-java9-installer # the oracle java
+java # check if it's been already installed
+java -version # check the default java version for now
+
+
+# apt management GUI
+sudo apt-get install synaptic gdebi
+
+
+# Multimedia support
+sudo apt-get install vlc smplayer audacious qmmp mixxx xbmc handbrake openshot
+sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install ffmpeg gstreamer0.10-plugins-bad lame libavcodec-extra
+
+
+# Illustration
+sudo apt-get install gimp gimp-plugin-registry gimp-data-extras darktable rawtherapee pinta shotwell inkscape
+
+
+# DVD/CD burning
+sudo apt-get install xfburn
+
+
+# tar, zip, rar...
+sudo apt-get install unace unrar rar zip unzip p7zip-full p7zip-rar sharutils uudeview mpack arj cabextract file-roller
+
+
+# Windows simulation & Games
+sudo apt-get install steam wine winetricks
+
+
+# Python3.X, which should be already installed
+# Check for the latest releases
+
+sudo apt-get install python3.5
+sudo apt-get install idle-python3.5
+sudo apt-get install python3-pip
+sudo apt-get build-dep python3-biopython # this might be important for python modules
+sudo python3.5 -m pip install biopython # this is how python3.5 pip is used
+sudo apt-get build-dep python3-numpy
+sudo apt-get build-dep python3-scipy
+sudo apt-get build-dep python3-matplotlib
+sudo python3.5 -m pip install numpy
+sudo python3.5 -m pip install scipy
+sudo python3.5 -m pip install matplotlib
+
+
+# R
+# There're 3 ways to install R on ubuntu
+
+# 1st the ubuntu default universe repository
+# the version is always half year late with CRAN
+sudo apt-get install r-base r-base-dev
+
+# 2nd CRAN
+# updates normally
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 # if later the update link is invalid somehow, you may wanna re-run this
+deb http://cran.r-project.org/bin/linux/ubuntu wily/ # you may chose another mirror site, as long as it works
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
+
+# 3rd launchpad PPA
+# updates even quicker than the CRAN, but older packages are not available
+sudo add-apt-repository ppa:marutter/rrutter
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
+
+
+# R packages
+sudo R CMD javareconf # reconfiguration to the updated java environment
+sudo apt-get install r-cran-rjava
+sudo R
+> source("http://www.bioconductor.org/biocLite.R")
+> biocLite() # biocLite(c("pkg1", "pkg2")) for bioconductor packages
+> install.packages("rJava") # install.packages(c("pkg1", "pkg2")) for CRAN packages
+> library("rJava") # check & load any R packages
+
+
+# Rstudio
+# Get on the Rstudio official site, download the installation deb, and click on the "Install" of the deb GUI
+
+
+# git
+sudo apt-get build-dep git-all
+sudo apt-get install git-all
+
+# my ubuntu goes wrong here, with error information "runit git-daemon-run E: Sub-process /usr/bin/dpkg returned an error code (1)"
+# the following series of commands will fix this:
+
+sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old
+sudo mkdir /var/lib/dpkg/info/
+sudo apt-get update
+sudo apt-get -f install
+sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/
+sudo rm -rf /var/lib/dpkg/info
+sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
