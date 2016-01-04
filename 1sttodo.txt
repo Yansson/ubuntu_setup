@@ -139,6 +139,28 @@ ssh-keygen -t rsa -C "email@githubregistration.com"
 # github.com -> settings -> Add SSH keys -> copy id_rsa.pub contents in -> Add Key
 
 
+# Zotero
+
+# Switch the GUI default language to ENGLISH
+# about:config in firefox address -> "I'll be careful, I promise!" -> search "useragent" -> general.useragent.locale -> en-US
+# search "matchOS" -> false
+
+# Preferences
+
+# NO snapshots savings
+# Preferences -> General -> Miscellaneous -> uncheck "snapshots"
+
+# Sync all items, but NO full-text pdfs to Zotero
+# Preferences -> Sync -> ONLY CHECK "Sync automatically" & "in group libraries" with username (NOT email) & password
+
+# Full-text pdfs storage
+# Preferences -> Advanced -> Files and Folders -> Show Data Directory
+# Open the terminal
+
+rm -r storage/
+ln -s /path/to/easy-handle/storage/ ./
+# ln TARGET LINK, NO storage/ should there be under LINK when ln
+
 # Zotero Libreoffice Integration
 # After the firefox extension and Before the libreoffice add-in
 
