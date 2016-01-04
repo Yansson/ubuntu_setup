@@ -131,3 +131,16 @@ sudo apt-get -f install
 sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/
 sudo rm -rf /var/lib/dpkg/info
 sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
+
+# connect with remote github repositories
+# first check the ~/.ssh/id_rsa & id_rsa.pub, if there's NO such things:
+
+ssh-keygen -t rsa -C "email@githubregistration.com"
+# github.com -> settings -> Add SSH keys -> copy id_rsa.pub contents in -> Add Key
+
+
+# Zotero Libreoffice Integration
+# After the firefox extension and Before the libreoffice add-in
+
+sudo apt-get install libreoffice-java-common
+# this shall make the add-in installation easier
