@@ -70,14 +70,21 @@ sudo apt-get install idle-python3.5
 sudo apt-get install python3-pip
 sudo apt-get build-dep python3-biopython # this might be important for python modules
 sudo python3.5 -m pip install biopython # this is how python3.5 pip is used
+sudo python3.5 -m pip install biopython --upgrade # this is how python3.5 package is upgraded
 sudo apt-get build-dep python3-numpy
 sudo apt-get build-dep python3-scipy
 sudo apt-get build-dep python3-matplotlib
 sudo apt-get build-dep openpyxl
+sudo apt-get build-dep xlwt
+sudo apt-get build-dep python3-xlrd
+sudo apt-get build-dep rpy2
 sudo python3.5 -m pip install numpy
-sudo python3.5 -m pip install scipy
+sudo python3.5 -m pip install scipy 
 sudo python3.5 -m pip install matplotlib
 sudo python3.5 -m pip install openpyxl
+sudo python3.5 -m pip install xlwt
+sudo python3.5 -m pip install xlrd
+sudo python3.5 -m pip install rpy2
 
 # R
 # There're 3 ways to install R on ubuntu
