@@ -33,6 +33,7 @@ sudo add-apt-repository ppa:webupd8team/java # adding source for oracle java
 sudo apt-get update
 sudo apt-get install oracle-java9-installer # the oracle java
 java # check if it's been already installed
+sudo update-alternatives --config java # switch among the default java versions
 java -version # check the default java version for now
 
 
@@ -85,6 +86,7 @@ sudo python3.5 -m pip install openpyxl
 sudo python3.5 -m pip install xlwt
 sudo python3.5 -m pip install xlrd
 sudo python3.5 -m pip install rpy2
+
 
 # R
 # There're 3 ways to install R on ubuntu
