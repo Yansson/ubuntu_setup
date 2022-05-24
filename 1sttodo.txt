@@ -43,21 +43,21 @@ sudo apt-get install synaptic gdebi
 
 
 # Multimedia support
-sudo apt-get install vlc smplayer audacious qmmp mixxx xbmc handbrake openshot
+sudo apt-get install vlc mplayer smplayer handbrake
 sudo apt-get install ubuntu-restricted-extras
-sudo apt-get install ffmpeg gstreamer0.10-plugins-bad lame libavcodec-extra
+sudo apt-get install ffmpeg ffmpeg-doc lame lame-doc
 
 
 # Illustration
-sudo apt-get install gimp gimp-plugin-registry gimp-data-extras darktable rawtherapee pinta shotwell inkscape
+sudo apt-get install gimp gimp-plugin-regsistry gimp-data-extras darktable pinta inkscape
 
 
 # DVD/CD burning
-sudo apt-get install xfburn
+sudo apt-get install xfburn devhelp
 
 
 # tar, zip, rar...
-sudo apt-get install unace unrar rar zip unzip p7zip-full p7zip-rar sharutils uudeview mpack arj cabextract file-roller
+sudo apt-get install unace rar unrar zip unzip p7zip-full p7zip-rar sharutils uudeview mpack arj
 
 
 # Windows simulation & Games
@@ -67,6 +67,8 @@ sudo apt-get install steam wine winetricks
 # Python3.X, which should be already installed
 # Check for the latest releases
 
+python3 -V # the installed version of python
+python3 # entering the console of python interaction
 sudo apt-get install python3.5
 sudo apt-get install idle-python3.5
 sudo apt-get install python3-pip
