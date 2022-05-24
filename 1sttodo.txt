@@ -21,17 +21,18 @@ sudo apt-get clean
 # Install sougou in ubuntu software center.
 # And try the following to give you more options:
 
-sudo apt-get install fcitx
-sudo apt-get install fcitx-googlepinyin fcitx-libpinyin fcitx-sunpinyin
+sudo apt-get install fcitx fcitx-rime
+sudo apt-get install im-config
+sudo apt-get install fcitx-sunpinyin fcitx-googlepinyin fcitx-libpinyin
+im-config # configuration of the Input method
+im-config -c # configuration of the Input method in Bios-like windows
 
 
 # Java
 # The versions may be updated, always check for the latest releases
 
-sudo apt-get install openjdk-8-jdk # the open java
-sudo add-apt-repository ppa:webupd8team/java # adding source for oracle java
 sudo apt-get update
-sudo apt-get install oracle-java9-installer # the oracle java
+sudo apt-get install openjdk-18-jdk # the open java
 java # check if it's been already installed
 sudo update-alternatives --config java # switch among the default java versions
 java -version # check the default java version for now
