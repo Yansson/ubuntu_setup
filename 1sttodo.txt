@@ -68,10 +68,13 @@ sudo apt-get install steam wine winetricks
 # Check for the latest releases
 
 python3 -V # the installed version of python
-python3 # entering the console of python interaction
-sudo apt-get install python3.5
-sudo apt-get install idle-python3.5
+python3 # enter the python console
+exit() # exit from the python console
+
+sudo apt-get upgrade python3
 sudo apt-get install python3-pip
+sudo apt-get install python-setuptools-doc
+
 sudo apt-get build-dep python3-biopython # this might be important for python modules
 sudo python3.5 -m pip install biopython # this is how python3.5 pip is used
 sudo python3.5 -m pip install biopython --upgrade # this is how python3.5 package is upgraded
