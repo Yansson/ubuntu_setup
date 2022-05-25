@@ -74,7 +74,7 @@ exit() # exit from the python console
 sudo apt-get upgrade python3
 sudo apt-get install python3-pip
 sudo apt-get install python-setuptools-doc
-pip install biopython numpy scipy matplotlib openpyxl
+pip install biopython numpy scipy pandas matplotlib openpyxl
 
 
 # R
