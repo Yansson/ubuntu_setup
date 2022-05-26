@@ -74,11 +74,15 @@ sudo snap install bing-wall
 # Get on the Anaconda official website, download the installation sh file, put it in 
 bash your/path/to/the/sh # like ~/Downloads/Anaconda3-2022.xx-inux-x86_64.sh
                          # just the name of the sh file like Anaconda3-2022.xx-inux-x86_64.sh if the file was right in the /home/user(~) directory
-source ~/.bashrc
+conda # may not work, need to refresh the environment variables
+source ~/.bashrc # refresh the environment variables (the hidden .bashrc file), now the conda should work
+                 # (base) showed up
 conda
 conda -h/--help
 conda -V/--version
-
+conda deactivate/activate # get rid of/ recall the (base) temporarily, it will show up after shut down and re-open the terminal
+conda config --show # shows the default config of anaconda, search for "auto_activate_base: True"
+conda config --set auto_activate_base False # if it's True, reset it to False, this should kill the (base) problem
 
 
 # Python3 was incorporated into Ubuntu22.04 as the default version
