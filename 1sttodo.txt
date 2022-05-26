@@ -74,46 +74,26 @@ exit() # exit from the python console
 sudo apt-get upgrade python3
 sudo apt-get install python3-pip
 sudo apt-get install python-setuptools-doc
-pip install biopython numpy scipy pandas matplotlib openpyxl
+pip3/pip install biopython numpy scipy pandas matplotlib openpyxl
 
 
 # R
-# There're 3 ways to install R on ubuntu
 
-# 1st the ubuntu default universe repository
-# the version is always half year late with CRAN
+# The ubuntu default universe repository
+# The version is always half a year later than the latest from CRAN
 sudo apt-get install r-base r-base-dev
+sudo R # run the R in ubuntu Terminal
 
-# 2nd CRAN
-# updates normally
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 # if later the update link is invalid somehow, you may wanna re-run this
-deb http://cran.r-project.org/bin/linux/ubuntu wily/ # you may chose another mirror site, as long as it works
-sudo apt-get update
-sudo apt-get install r-base r-base-dev
-
-# 3rd launchpad PPA
-# updates even quicker than the CRAN, but older packages are not available
-sudo add-apt-repository ppa:marutter/rrutter
-sudo apt-get update
-sudo apt-get install r-base r-base-dev
-
-
-# R packages
-sudo R CMD javareconf # reconfiguration to the updated java environment
-sudo apt-get install r-cran-rjava
-sudo R
-> source("http://www.bioconductor.org/biocLite.R")
-> biocLite() # biocLite(c("pkg1", "pkg2")) for bioconductor packages
-> install.packages("rJava") # install.packages(c("pkg1", "pkg2")) for CRAN packages
-> library("rJava") # check & load any R packages
+pip3/pip install rpy2 # rpy2 could only be installed AFTER the installation of R
 
 
 # Rstudio
-# Get on the Rstudio official site, download the installation deb, and click on the "Install" of the deb GUI
+# Get on the Rstudio official site, download the installation deb file, and click on the "Install" of the deb GUI
 
 
-# vim
-sudo apt-get install vim vim-gnome
+# Visual Studio Code
+# Get on the VSCode offcial site, download the installation deb file
+sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd64.deb
 
 
 # git
