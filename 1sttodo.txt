@@ -64,6 +64,10 @@ sudo apt-get install unace rar unrar zip unzip p7zip-full p7zip-rar sharutils uu
 sudo apt-get install steam wine winetricks
 
 
+# Bing Wallpaper
+sudo snap install bing-wall
+
+
 # Python3.X, which should be already installed
 # Check for the latest releases
 
