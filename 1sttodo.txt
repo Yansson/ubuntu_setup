@@ -96,6 +96,7 @@ sudo apt-get upgrade python3
 sudo apt-get install python3-pip
 sudo apt-get install python-setuptools-doc
 pip3/pip install biopython numpy scipy pandas matplotlib openpyxl
+pip3 install flake8 yapf # for the development environment
 
 
 # R
