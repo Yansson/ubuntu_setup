@@ -123,10 +123,26 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
 
 # R in Visual Studio Code
 # Follow the instructions on VScode official website "https://code.visualstudio.com/docs/languages/r"
+
 # First, install R
+
 $ radian
 > install.packages("languageserver") # may need to create a new, accessible R library, type "yes"
                                      # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
+> install.packages("rmarkdown") # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
+> install.packages("httpgd") # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
+
+# VScode extensions:
+# R extension for Visual Studio Code (REditorSupport)
+# R Debugger
+
+# Settings
+# User
+$ whereis radian # get the path of radian in Terminal
+# R > Rterm: Linux (use the search bar to locate the item quickly): /the/full/path/to/radian, like /home/user/.local/bin/radian
+# R > Rterm: Option: delete --no-save, delete --no-restore, add --no-site-file
+# R: Bracketed Paste: check the box
+# R > Plot Use Httpgd: check the box
 
 
 
