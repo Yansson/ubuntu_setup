@@ -101,21 +101,33 @@ pip3 install flake8 yapf # for the development environment
 
 # R
 
-# The ubuntu default universe repository
+# The best way to install R is to use ubuntu default universal repository
 # The version is always half a year later than the latest from CRAN
 sudo apt-get install r-base r-base-dev
 sudo R # run the R in ubuntu Terminal
 
+# or, get on the offical CRAN gwebsite https://cloud.r-project.org/, follow the instructions
+
 pip3/pip install rpy2 # rpy2 could only be installed properly AFTER the installation of R
+pip3 install -U radian # radian, a 21 century R console, https://github.com/randy3k/radian
 
 
 # Rstudio
+# NOT recommended in ubuntu, lots of bugs.
 # Get on the Rstudio official website, download the installation deb file, and click on the "Install" of the deb GUI
 
 
 # Visual Studio Code
 # Get on the VSCode offcial site, download the installation deb file
 sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd64.deb
+
+# R in Visual Studio Code
+# Follow the instructions on VScode official website "https://code.visualstudio.com/docs/languages/r"
+# First, install R
+$ radian
+> install.packages("languageserver") # may need to create a new, accessible R library, type "yes"
+                                     # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
+
 
 
 # git
