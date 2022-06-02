@@ -113,7 +113,7 @@ pip3 install -U radian # radian, a 21 century R console, https://github.com/rand
 
 
 # Rstudio
-# NOT recommended in ubuntu, lots of bugs.
+# NOT recommended under ubuntu, lots of bugs.
 # Get on the Rstudio official website, download the installation deb file, and click on the "Install" of the deb GUI
 
 
@@ -143,6 +143,44 @@ $ whereis radian # get the path of radian in Terminal
 # R > Rterm: Option: delete --no-save, delete --no-restore, add --no-site-file
 # R: Bracketed Paste: check the box
 # R > Plot Use Httpgd: check the box
+# R: Session Watcher: check the box
+
+# Keyboard Shortcuts Settings
+# Put the following codes inside the []
+###
+{
+        "key": "alt+-",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "text": " <- "
+        }
+    },
+    {
+        "key": "alt+-",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'rmd'",
+        "args": {
+            "text": " <- "
+        }
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "snippet": " %>% "
+        }
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'rmd'",
+        "args": {
+            "snippet": " %>% "
+        }
+    }
+###
 
 
 
@@ -169,10 +207,8 @@ ssh-keygen -t rsa -C "email@githubregistration.com"
 
 
 # Zotero
-
-# Switch the GUI default language to ENGLISH
-# about:config in firefox address -> "I'll be careful, I promise!" -> search "useragent" -> general.useragent.locale -> en-US
-# search "matchOS" -> false
+# Nutstore is NOT recommended under ubuntu, lots of bugs
+# leave the synchronization of updated local library with online storage to Windows11
 
 # Preferences
 
