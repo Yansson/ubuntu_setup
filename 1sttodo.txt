@@ -179,6 +179,14 @@ $ whereis radian # get the path of radian in Terminal
         "args": {
             "snippet": " %>% "
         }
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "terminalFocus",
+        "args": {
+            "snippet": " %>% "
+        }
     }
 ###
 
