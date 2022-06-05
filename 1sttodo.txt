@@ -103,7 +103,7 @@ pip3 install flake8 yapf # for the development environment
 
 # The best way to install R is to use ubuntu default universal repository
 # The version is always half a year later than the latest from CRAN
-sudo apt-get install r-base r-base-dev
+sudo apt-get install r-base
 sudo R # run the R in ubuntu Terminal
 
 # or, get on the offical CRAN gwebsite https://cloud.r-project.org/, follow the instructions
@@ -236,6 +236,3 @@ ln -s /path/to/easy-handle/storage/ ./
 
 # Zotero Libreoffice Integration
 # After the firefox extension and Before the libreoffice add-in
-
-sudo apt-get install libreoffice-java-common
-# this shall make the add-in installation easier
