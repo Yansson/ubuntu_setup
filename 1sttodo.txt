@@ -68,8 +68,8 @@ sudo apt-get install steam wine winetricks
 sudo snap install bing-wall
 
 
-# Anaconda, for data science
-# The Python/R package & environment manager
+
+# Anaconda, a Python version for data science
 
 # Installation
 # Get on the Anaconda official website, download the installation sh file
@@ -99,24 +99,73 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# Python3 was incorporated into Ubuntu22.04 as the default version
-# Check for the latest release
+# Visual Studio Code, a free, powerful and easy-handling IDE for python
+# Get on the VSCode official website, download the installation deb file
+# Follow the instructions on the VSCode official website: https://code.visualstudio.com/docs/python/python-tutorial
+sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd64.deb
+# put the following codes inside the [] of keybindings.json, for keyboard shortcuts setting
+'''
+{
+        "key": "shift+meta+enter",
+        "command": "python.execInTerminal-icon"
+    },
+    {
+        "key": "shift+meta+enter",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "shift+alt+enter",
+        "command": "jupyter.runFileInteractive"
+    },
+    {
+        "key": "` t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "` 1",
+        "command": "workbench.action.terminal.focusAtIndex1"
+    },
+    {
+        "key": "` 2",
+        "command": "workbench.action.terminal.focusAtIndex2"
+    },
+    {
+        "key": "` 3",
+        "command": "workbench.action.terminal.focusAtIndex3"
+    },
+    {
+        "key": "` t",
+        "command": "terminal.focus"
+    },
+    {
+        "key": "shift+meta+p",
+        "command": "python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "` j",
+        "command": "interactive.input.focus"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "jupyter.runfromline"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "jupyter.runtoline"
+    }
+'''
 
-python3 -V # the installed version of python
-python3 # enter the python console
-exit() # exit from the python console
-
-sudo apt-get upgrade python3
-sudo apt-get install python3-pip
-sudo apt-get install python-setuptools-doc
-pip3/pip install biopython numpy scipy pandas matplotlib openpyxl
-pip3 install flake8 yapf # for the development environment
 
 
 # R
 
-# The best way to install R is to use ubuntu default universal repository
-# The version is always half a year later than the latest from CRAN
+# The ubuntu default universal repository, easy-handling but the version of which is always half a year later than the latest from CRAN
 sudo apt-get install r-base
 sudo R # run the R in ubuntu Terminal
 
@@ -125,84 +174,8 @@ sudo R # run the R in ubuntu Terminal
 pip3/pip install rpy2 # rpy2 could only be installed properly AFTER the installation of R
 pip3 install -U radian # radian, a 21 century R console, https://github.com/randy3k/radian
 
-
 # Rstudio
-# NOT recommended under ubuntu, lots of bugs.
 # Get on the Rstudio official website, download the installation deb file, and click on the "Install" of the deb GUI
-
-
-# Visual Studio Code
-# Get on the VSCode offcial site, download the installation deb file
-sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd64.deb
-
-# R in Visual Studio Code
-# Follow the instructions on VScode official website "https://code.visualstudio.com/docs/languages/r"
-
-# First, install R
-
-$ radian
-> install.packages("languageserver") # may need to create a new, accessible R library, type "yes"
-                                     # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
-> install.packages("rmarkdown") # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
-> install.packages("httpgd") # may need extra ubuntu package dependencies. So quit R and sudo apt install all needed dependencies.
-
-# VScode extensions:
-# R extension for Visual Studio Code (REditorSupport)
-# R Debugger
-
-# Settings
-# User
-$ whereis radian # get the path of radian in Terminal
-# R > Rterm: Linux (use the search bar to locate the item quickly): /the/full/path/to/radian, like /home/user/.local/bin/radian
-# R > Rterm: Option: delete --no-save, delete --no-restore, add --no-site-file
-# R: Bracketed Paste: check the box
-# R > Plot Use Httpgd: check the box
-# R: Session Watcher: check the box
-
-# Keyboard Shortcuts Settings
-# Put the following codes inside the []
-###
-{
-        "key": "alt+-",
-        "command": "type",
-        "when": "editorTextFocus && editorLangId == 'r'",
-        "args": {
-            "text": " <- "
-        }
-    },
-    {
-        "key": "alt+-",
-        "command": "type",
-        "when": "editorTextFocus && editorLangId == 'rmd'",
-        "args": {
-            "text": " <- "
-        }
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == 'r'",
-        "args": {
-            "snippet": " %>% "
-        }
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == 'rmd'",
-        "args": {
-            "snippet": " %>% "
-        }
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "editor.action.insertSnippet",
-        "when": "terminalFocus",
-        "args": {
-            "snippet": " %>% "
-        }
-    }
-###
 
 
 
@@ -226,27 +199,3 @@ sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 
 ssh-keygen -t rsa -C "email@githubregistration.com"
 # github.com -> settings -> Add SSH keys -> copy id_rsa.pub contents in -> Add Key
-
-
-# Zotero
-# Nutstore is NOT recommended under ubuntu, lots of bugs
-# leave the synchronization of updated local library with online storage to Windows11
-
-# Preferences
-
-# NO snapshots savings
-# Preferences -> General -> Miscellaneous -> uncheck "snapshots"
-
-# Sync all items, but NO full-text pdfs to Zotero
-# Preferences -> Sync -> ONLY CHECK "Sync automatically" & "in group libraries" with username (NOT email) & password
-
-# Full-text pdfs storage
-# Preferences -> Advanced -> Files and Folders -> Show Data Directory
-# Open the terminal
-
-rm -r storage/
-ln -s /path/to/easy-handle/storage/ ./
-# ln TARGET LINK, NO storage/ should there be under LINK when ln
-
-# Zotero Libreoffice Integration
-# After the firefox extension and Before the libreoffice add-in
