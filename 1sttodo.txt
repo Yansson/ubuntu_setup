@@ -143,11 +143,6 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
         "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
     },
     {
-        "key": "shift+alt+j",
-        "command": "jupyter.execSelectionInteractive",
-        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
-    },
-    {
         "key": "` j",
         "command": "interactive.input.focus"
     },
@@ -158,9 +153,27 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
     {
         "key": "shift+alt+t",
         "command": "jupyter.runtoline"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "jupyter.createnewinteractive"
     }
 '''
-
+# put the following codes in the settings.json file, for preference setting
+'''
+{
+    "workbench.colorTheme": "Monokai",
+    "git.ignoreLegacyWarning": true,
+    "remote.SSH.showLoginTerminal": true,
+    "python.defaultInterpreterPath": "/home/yansson/anaconda3/bin/python",
+    "terminal.integrated.inheritEnv": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "scm.inputFontSize": 14,
+    "markdown.preview.fontSize": 13
+}
+'''
 
 
 # R
