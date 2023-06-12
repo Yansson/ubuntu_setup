@@ -97,6 +97,7 @@ from
 to
 unset __conda_setup
 # <<< conda initialize <<<
+source ~/.bashrc # refresh the environment variables (the hidden .bashrc file)
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
