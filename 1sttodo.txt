@@ -99,6 +99,19 @@ unset __conda_setup
 # <<< conda initialize <<<
 source ~/.bashrc # refresh the environment variables (the hidden .bashrc file)
 
+# when starting the anaconda jupyter-lab, if you encounter with the following
+# ImportError: cannot import name 'has_suggestion' from 'prompt_toolkit.filter'
+# to fix this error
+# First check out the location of the file that goes wrong
+# then uninstall/remove the wrong file and re-install it.
+# if it's in the system's own python directory, then
+pip uninstall prompt_toolkit
+pip install prompt_toolkit
+# or otherwise if it's in the anaconda's python directory, then
+conda remove prompt_toolkit
+conda install prompt_toolkit
+
+
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
 # Get on the VSCode official website, download the installation deb file
@@ -175,6 +188,7 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
     "markdown.preview.fontSize": 13
 }
 '''
+
 
 
 # R
