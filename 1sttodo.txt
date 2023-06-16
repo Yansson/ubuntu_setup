@@ -115,7 +115,7 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
         "command": "python.execInTerminal"
     },
     {
-        "key": "shift+alt+enter",
+        "key": "shift+enter",
         "command": "jupyter.runFileInteractive"
     },
     {
