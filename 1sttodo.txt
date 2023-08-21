@@ -227,3 +227,14 @@ sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 
 ssh-keygen -t rsa -C "email@githubregistration.com"
 # github.com -> settings -> Add SSH keys -> copy id_rsa.pub contents in -> Add Key
+
+
+
+# Zotero
+# Build up the zotero database link on Windows
+# type the following commands on the commandline as Administrator
+
+cd "C:\Users\YANG Song\Zotero"
+dir # check if the "storage" directory is there
+# if it does, delete it
+mklink /d ".\storage" "D:\BaiduSyncdisk\storage"
