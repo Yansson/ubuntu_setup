@@ -128,14 +128,6 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
         "command": "python.execInTerminal"
     },
     {
-        "key": "shift+enter",
-        "command": "jupyter.runFileInteractive"
-    },
-    {
-        "key": "` t",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
         "key": "` 1",
         "command": "workbench.action.terminal.focusAtIndex1"
     },
@@ -148,16 +140,7 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
         "command": "workbench.action.terminal.focusAtIndex3"
     },
     {
-        "key": "` t",
-        "command": "terminal.focus"
-    },
-    {
-        "key": "shift+meta+p",
-        "command": "python.execSelectionInTerminal",
-        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
-    },
-    {
-        "key": "` j",
+        "key": "` i",
         "command": "interactive.input.focus"
     },
     {
@@ -170,6 +153,10 @@ sudo apt install your/COMPLETE/path/to/the/deb # like /home/user/code_xxxxxx_amd
     },
     {
         "key": "shift+alt+j",
+        "command": "ipynb.newUntitledIpynb"
+    },
+    {
+        "key": "shift+alt+i",
         "command": "jupyter.createnewinteractive"
     }
 '''
