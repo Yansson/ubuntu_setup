@@ -105,10 +105,9 @@ source ~/.bashrc # refresh the environment variables (the hidden .bashrc file)
 # Because the conda cannot find the libarchive.so.19 file when loading conda-libmamba-solver
 # First you need to check out whether the libarchive.so.19 exists
 sudo find / -name 'libarchive.so.*' 2>/dev/null # locate all the libarchive.so.* files in the whole system
-
 # if you can find the libarchive.so.19 do exist in the ~/anaconda3/pkgs/ directory, but not in the ubuntu system (/usr/lib/x86_64-linux-gnu)
 # to make a soft link in the system targeting the anaconda3 libarchive.so.19 file
-sudo ln -s 
+sudo ln -s ~/anaconda3/pkgs/libarchive-3.6.2-h6ac8c49_2/lib/libarchive.so.19 /usr/lib/x86_64-linux-gnu/
 
 # when starting the anaconda jupyter-lab, if you encounter with the following
 # ImportError: cannot import name 'has_suggestion' from 'prompt_toolkit.filter'
