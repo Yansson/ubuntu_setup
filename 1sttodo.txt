@@ -102,6 +102,13 @@ source ~/.bashrc # refresh the environment variables (the hidden .bashrc file)
 # when activating conda command after adding the "conda-forge" channel and updating the anaconda, you may encounter the following
 # Error while loading conda entry point: conda-libmamba-solver (libarchive.so.19: cannot open shared object file: No such file or directory)
 # CondaValueError: you have chosen a non-default solver backend (libmamba) but it was not recognized. Choose one of: classic
+# Because the conda cannot find the libarchive.so.19 file when loading conda-libmamba-solver
+# First you need to check out whether the libarchive.so.19 exists
+sudo find / -name 'libarchive.so.*' 2>/dev/null # locate all the libarchive.so.* files in the whole system
+
+# if you can find the libarchive.so.19 do exist in the ~/anaconda3/pkgs/ directory, but not in the ubuntu system (/usr/lib/x86_64-linux-gnu)
+# to make a soft link in the system targeting the anaconda3 libarchive.so.19 file
+sudo ln -s 
 
 # when starting the anaconda jupyter-lab, if you encounter with the following
 # ImportError: cannot import name 'has_suggestion' from 'prompt_toolkit.filter'
