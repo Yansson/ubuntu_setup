@@ -99,6 +99,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 source ~/.bashrc # refresh the environment variables (the hidden .bashrc file)
 
+# when activating conda command after adding the "conda-forge" channel and updating the anaconda, you may encounter the following
+# Error while loading conda entry point: conda-libmamba-solver (libarchive.so.19: cannot open shared object file: No such file or directory)
+# CondaValueError: you have chosen a non-default solver backend (libmamba) but it was not recognized. Choose one of: classic
+
 # when starting the anaconda jupyter-lab, if you encounter with the following
 # ImportError: cannot import name 'has_suggestion' from 'prompt_toolkit.filter'
 # to fix this error
