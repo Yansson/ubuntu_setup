@@ -17,9 +17,8 @@ sudo apt-get clean
 
 # for Ubuntu 22.04 LTS, IBus Chinese Input System works fine
 # settings--->Regions & Languages--->Manage Installed Languages--->Install/Remove Languages--->Chinese (simplified) check--->Reboot
-
 sudo apt-get install ibus-libpinyin
-
+ibus-setup # for settings of this input system
 
 
 # Java
