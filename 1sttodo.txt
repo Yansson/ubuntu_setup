@@ -1,5 +1,5 @@
 # This is a list of what you should do first right after ubuntu installation.
-# ubuntu 15.10 Date 2016-1-1
+# ubuntu 22.04
 # Make sure that your internet connection is very good.
 
 
@@ -15,17 +15,11 @@ sudo apt-get autoclean
 sudo apt-get clean
 
 
-# for the Chinese Input System, always keep this in mind:
-# NO IBUS! Always Fcitx! Ibus works like shit.
-# which should be already installed.
-# Install sougou in ubuntu software center.
-# And try the following to give you more options:
+# for Ubuntu 22.04 LTS, IBus Chinese Input System works fine
+# settings--->Regions & Languages--->Manage Installed Languages--->Install/Remove Languages--->Chinese (simplified) check--->Reboot
 
-sudo apt-get install fcitx fcitx-rime
-sudo apt-get install im-config
-sudo apt-get install fcitx-sunpinyin fcitx-googlepinyin fcitx-libpinyin
-im-config # configuration of the Input method
-im-config -c # configuration of the Input method in Bios-like windows
+sudo apt-get install ibus-libpinyin
+
 
 
 # Java
