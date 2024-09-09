@@ -71,8 +71,8 @@ bash your/path/to/the/sh # like ~/Downloads/Anaconda3-2022.xx-inux-x86_64.sh
 conda # may not work, need to refresh the environment variables
 source ~/.bashrc # refresh the environment variables (the hidden .bashrc file), now the conda should work
                  # (base) showed up
-# add conda to the ~/.bashrc
-
+# add conda to the ~/.bashrc, if needed
+~/anaconda3/bin/conda init
 conda
 conda -h/--help
 conda -V/--version
