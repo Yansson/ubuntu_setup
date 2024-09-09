@@ -77,6 +77,7 @@ conda -V/--version
 conda deactivate/activate # get rid of/ recall the (base) temporarily, it will show up after shut down and re-open the terminal
 conda config --show # shows the default config of anaconda, search for "auto_activate_base: True"
 conda config --set auto_activate_base False # if it's True, reset it to False, this should kill the (base) problem
+# add commonly used app channels
 # Uninstallation, when re-installation is needed. Sometimes anaconda may work inappropriately after updating.
 conda install anaconda-clean # anaconda-clean creates data files and backup files, NOT necessary if nothing to be reserved.
 anaconda-clean/anaconda-clean --yes
