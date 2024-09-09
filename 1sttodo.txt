@@ -69,10 +69,9 @@ sudo snap install bing-wall
 bash your/path/to/the/sh # like ~/Downloads/Anaconda3-2022.xx-inux-x86_64.sh
                          # just the name of the sh file like Anaconda3-2022.xx-inux-x86_64.sh if the file was right in the /home/user(~) directory
 conda # may not work, need to refresh the environment variables
+~/anaconda3/bin/conda init # add conda to the ~/.bashrc, if needed
 source ~/.bashrc # refresh the environment variables (the hidden .bashrc file), now the conda should work
                  # (base) showed up
-# add conda to the ~/.bashrc, if needed
-~/anaconda3/bin/conda init
 conda
 conda -h/--help
 conda -V/--version
