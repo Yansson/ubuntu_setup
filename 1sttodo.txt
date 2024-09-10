@@ -118,6 +118,9 @@ pip install prompt_toolkit
 conda remove prompt_toolkit
 conda install prompt_toolkit
 
+# import seaborn as sns
+# iris_df = sns.load_dataset("iris")
+# URLError: <urlopen error [Errno 111] connection refused>
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
