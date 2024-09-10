@@ -125,7 +125,7 @@ conda install prompt_toolkit
 # you will have to download the seaborn-data manually as seaborn-data.zip from a domestic mirror
 # https://labfile.oss.aliyuncs.com/courses/2616/seaborn-data.zip
 # unzip it, copy the seaborn-data/ directory to local anaconda3 site
-
+cp -r your/path/to/the/seaborn-data/ /home/yansson/anaconda3/lib/python3.12/site-packages/seaborn/
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
