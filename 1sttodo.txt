@@ -123,6 +123,9 @@ conda install prompt_toolkit
 # URLError: <urlopen error [Errno 111] connection refused>
 # you can't download the seaborn-data automatically from the official website
 # you will have to download the seaborn-data manually as seaborn-data.zip from a domestic mirror
+# https://labfile.oss.aliyuncs.com/courses/2616/seaborn-data.zip
+# unzip it, copy the seaborn-data/ directory to local anaconda3 site
+
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
