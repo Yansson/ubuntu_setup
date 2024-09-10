@@ -126,6 +126,11 @@ conda install prompt_toolkit
 # https://labfile.oss.aliyuncs.com/courses/2616/seaborn-data.zip
 # unzip it, copy the seaborn-data/ directory to local anaconda3 site
 cp -r your/path/to/the/seaborn-data/ /home/yansson/anaconda3/lib/python3.12/site-packages/seaborn/
+import seaborn as sns
+iris_df = sns.load_dataset(name="iris",
+                           data_home="/home/yansson/anaconda3/lib/python3.12/site-packages/seaborn/seaborn-data")
+
+
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
