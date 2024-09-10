@@ -121,6 +121,8 @@ conda install prompt_toolkit
 # import seaborn as sns
 # iris_df = sns.load_dataset("iris")
 # URLError: <urlopen error [Errno 111] connection refused>
+# you can't download the seaborn-data automatically from the official website
+# you will have to download the seaborn-data manually as seaborn-data.zip from a domestic mirror
 
 
 # Visual Studio Code, a free, powerful and easy-handling IDE for python
