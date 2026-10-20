@@ -81,7 +81,9 @@ conda config --set auto_activate_base False # if it's True, reset it to False, t
 # add commonly used app channels
 conda config --add channels bioconda
 conda config --add channels conda-forge
-# Uninstallation, when re-installation is needed. Sometimes anaconda may work inappropriately after updating.
+
+# Uninstallation
+# when re-installation is needed. Sometimes anaconda may work inappropriately after updating.
 conda install anaconda-clean # anaconda-clean creates data files and backup files, NOT necessary if nothing to be reserved.
 anaconda-clean/anaconda-clean --yes
 sudo rm -rf your/path/to/the/anaconda3/directory # like /home/user(~)/anaconda3/
