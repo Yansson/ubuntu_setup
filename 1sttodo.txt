@@ -77,7 +77,7 @@ conda -h/--help
 conda -V/--version
 conda deactivate/activate # get rid of/ recall the (base) temporarily, it will show up after shut down and re-open the terminal
 conda config --show # shows the default config of anaconda, search for "auto_activate_base: True"
-conda config --set auto_activate_base False # if it's True, reset it to False, this should kill the (base) problem
+conda config --set auto_activate False # if it's True, reset it to False, this should kill the (base) problem
 # add commonly used app channels
 conda config --add channels bioconda
 conda config --add channels conda-forge
