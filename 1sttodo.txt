@@ -75,8 +75,8 @@ source ~/.bashrc # refresh the environment variables (the hidden .bashrc file), 
 conda
 conda -h/--help
 conda -V/--version
-conda deactivate/activate # get rid of/ recall the (base) temporarily, it will show up after shut down and re-open the terminal
-conda config --show # shows the default config of anaconda, search for "auto_activate_base: True"
+conda deactivate/activate # deactivate/activate the base env. It will stay activated when the terminal opens next time by default
+conda config --show # shows the default config of anaconda, search for "auto_activate: True"
 conda config --set auto_activate False # if it's True, reset it to False, this should kill the (base) problem
 # add commonly used app channels
 conda config --add channels bioconda
